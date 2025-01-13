@@ -8,8 +8,8 @@ Class {
 	#package : 'BaselineOfXMLParserHTML'
 }
 
-{ #category : 'baseline' }
-BaselineOfXMLParserHTML >> baselineOf: spec [
+{ #category : 'baselines' }
+BaselineOfXMLParserHTML >> baseline: spec [
 
 	<baseline>
 	spec
@@ -33,7 +33,7 @@ BaselineOfXMLParserHTML >> baselineOf: spec [
 	]
 ]
 
-{ #category : 'baseline' }
+{ #category : 'baselines' }
 BaselineOfXMLParserHTML >> xmlParserOn: spec [
 
 	spec
