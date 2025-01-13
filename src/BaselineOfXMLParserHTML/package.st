@@ -1,1 +1,1 @@
-Package { #name : #BaselineOfXMLParserHTML }
+Package { #name : 'BaselineOfXMLParserHTML' }
