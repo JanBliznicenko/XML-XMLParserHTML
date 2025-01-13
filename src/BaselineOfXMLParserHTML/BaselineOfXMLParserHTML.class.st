@@ -2,13 +2,14 @@
 Baseline for Parsers for HTML that convert possibly malformed HTML into well-formed XML (see https://github.com/pharo-contributions/XML-XMLParserHTML)
 "
 Class {
-	#name : #BaselineOfXMLParserHTML,
-	#superclass : #BaselineOf,
-	#category : #BaselineOfXMLParserHTML
+	#name : 'BaselineOfXMLParserHTML',
+	#superclass : 'BaselineOf',
+	#category : 'BaselineOfXMLParserHTML',
+	#package : 'BaselineOfXMLParserHTML'
 }
 
-{ #category : #baseline }
-BaselineOfXMLParserHTML >> baselineOf: spec [
+{ #category : 'baselines' }
+BaselineOfXMLParserHTML >> baseline: spec [
 
 	<baseline>
 	spec
@@ -32,7 +33,7 @@ BaselineOfXMLParserHTML >> baselineOf: spec [
 	]
 ]
 
-{ #category : #baseline }
+{ #category : 'baselines' }
 BaselineOfXMLParserHTML >> xmlParserOn: spec [
 
 	spec
@@ -40,7 +41,7 @@ BaselineOfXMLParserHTML >> xmlParserOn: spec [
       with: [ 
 			spec
 				loads: #('Core');
-				repository: 'github://pharo-contributions/XML-XMLParser:3.5.x/src' ]. 
+				repository: 'github://pharo-contributions/XML-XMLParser:v3.6.x/src' ]. 
 				
 	spec 
 		project: 'XMLParser Tests' copyFrom: 'XMLParser' with: [ spec loads: #('Tests') ]; 	
